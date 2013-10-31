@@ -1,3 +1,10 @@
 <h3>About Me</h3>
 
 <p>I do programming, and like to make games.</p>
+
+
+<ul>
+    {% for post in site.posts limit: 5 %}
+        <li><a href="{{post.url}}">{{post.title}}</a></li>
+    {% endfor %}
+</ul>
