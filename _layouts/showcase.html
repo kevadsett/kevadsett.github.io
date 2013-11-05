@@ -6,7 +6,11 @@
   <div class="span8">
     <h1>{{ page.title }}</h1>
     <p class="muted">{{page.date | date_to_long_string}}</p>
-    <div id="image" class="span3"><a href="{{page.link}}" target="_blank"><img src="/img/thumbnails/{{page.thumbnail}}"/></a></div>
+    <div id="links" class="span3">
+        <div id="projectThumbnail" class="span12"><img src="/img/thumbnails/{{page.thumbnail}}"/></div>
+        <div class="span12"><a href="{{page.link}}" target="_blank"><div class="btn">See the project</div></a></div>
+        <div class="span12"><a href="{{page.srcLink}}" target="_blank"><div class="btn">See the code</div></a></div>
+    </div>
     <div id="description" class="span7">{{content}}</div>
   </div>
 </div>
