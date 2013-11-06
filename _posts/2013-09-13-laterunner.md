@@ -11,7 +11,7 @@ This was a little game I made over the course of a week for the <a href="http://
 
 The real challenge of the project was that the final game, after minification and zipping, had to be less than 13 kilobytes! It certainly opened my eyes up to programming Javascript without libraries.
 
-Part of the puzzle of the game was to work out what to do with it (rule #1, don't confuse the player!)
+Part of the puzzle of the game was to work out what to do with it (rule #1, don't confuse the player!).
 
 The theme of the Jam was 'bad luck', so our poor protagonist isn't having the best day. I added the subtitles to try and get a little bit of emotion from what is a pretty basic game.
 
