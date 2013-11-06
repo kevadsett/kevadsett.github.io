@@ -2,17 +2,21 @@
 layout: default
 ---
 
+
 {% for post in paginator.posts limit: 10 %}
-    <div class="row-fluid">
-        <div class="span12">
-            <h2>{{post.title}}</h2>
-            <h4>{{ post.date | date_to_long_string}}</h4>
-            <p>
-                <a href="{{ post.url }}">Read Post</a>
-            </p>
+    {% cycle 'add rows': '<div class="row-fluid">', nil, nil %}
+        <div class="span4">
+            <div class="previewThumbnail">
+                <a href="{{ post.url }}"><img src= "/img/thumbnails/{{ post.thumbnail}}" /></a>
+                <h3>{{post.title}}</h3>
+            </div>
         </div>
-    </div>
+    {% cycle 'close rows': nil, nil, "</div>" %}
+    {% assign result = forloop.index | divided_by: forloop.length %}
 {% endfor %}
+{% if result == 1 %}
+    </div>
+{% endif %}
 <div class="row-fluid">
     <div class="span12">
         <div class="pagination">
