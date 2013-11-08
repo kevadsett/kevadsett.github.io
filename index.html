@@ -7,7 +7,7 @@ layout: default
     {% cycle 'add rows': '<div class="row-fluid">', nil, nil %}
         <div class="span4">
             <div class="previewThumbnail">
-                <a href="{{ post.url }}"><img src= "/img/thumbnails/{{ post.thumbnail}}" /></a>
+                <a href="{{ post.url }}"><img src= "/img/thumbnails/{% if post.thumbnail %}{{ post.thumbnail}}{% else %}placekitten.jpg{% endif %}" width="180" height="180"/></a>
                 <h3>{{post.title}}</h3>
             </div>
         </div>

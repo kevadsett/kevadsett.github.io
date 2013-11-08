@@ -7,8 +7,14 @@
     <h1>{{ page.title }}</h1>
     <p class="muted">{{page.date | date_to_long_string}}</p>
     <div id="links" class="span3">
-        <div class="span12 projectThumbnail"><img src="/img/thumbnails/{{page.thumbnail}}"/></div>
-        <div class="span12 showcaseButton"><a href="{{page.link}}" target="_blank"><div class="btn">{{page.viewProjectText}}</div></a></div>
+        <div class="span12 projectThumbnail"><img src= "/img/thumbnails/{% if page.thumbnail %}{{ page.thumbnail }}{% else %}placekitten.jpg{% endif %}" /></a></div>
+        <div class="span12 showcaseButton">
+            {% if page.link != 'no-link' %}
+                <a href="{{page.link}}" target="_blank"><div class="btn">{{page.viewProjectText}}</div></a>
+            {% else %}
+                <div class="btn disabled">{{page.viewProjectText}}</div>
+            {% endif %}
+        </div>
         <div class="span12 showcaseButton"><a href="{{page.srcLink}}" target="_blank"><div class="btn">See the code</div></a></div>
     </div>
     <div id="description" class="span7">{{content}}</div>
