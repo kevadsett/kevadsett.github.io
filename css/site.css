@@ -5,14 +5,18 @@ body {
     color: #b4b0a2;
 }
 
-.header {
-    background-color: #fff;
-    text-align:center;
-}
-
 a {
     color:#474745;
     text-decoration:none;
+}
+
+.clearfix:before, .clearfix:after { content: "\0020"; display: block; height: 0; overflow: hidden; }  
+.clearfix:after { clear: both; }  
+.clearfix { zoom: 1; }  
+
+.header {
+    background-color: #fff;
+    text-align:center;
 }
 
 .homeLink {
@@ -31,11 +35,107 @@ a {
 }
 
 .nav-bar ul {
-    margin: 10px;
+    margin: 5px;
     padding:0;
     list-style-type:none;
 }
 
-.nav-bar li.nav-item {
-    display:inline-block
+
+.featured-projects {
+    max-width: 900px;
+    margin: 25px auto;
+}
+
+.featured-row {
+    width:100%;
+}
+
+.divider {
+    background-image: url("../img/theme/divider-desktop.png");
+    margin: auto;
+}
+
+/* Media queries!
+-------------------------------------------------------------------------------*/
+
+@media all and (min-width:725px) {
+    .featured-item {
+        width: 25%;
+        display: block;
+        float: left;
+        margin: 0 0px;
+    }
+    .featured-item:nth-child(2){
+        margin:0 12.5%;
+    }
+
+    .divider {
+        width:568px;
+        height:2px;
+    }
+
+    .nav-item {
+        display:inline-block;
+        font-size: 13pt;
+        padding: 0 5px;
+    }
+    
+    .nav-item.portfolio {
+        font-size: 15pt;
+        border-left: solid 1px;
+        border-right: solid 1px;
+    }
+/*End MediaQ*/		
+}
+
+@media all and (max-width:724px) and (min-width:440px) {
+    .featured-item {
+        width: 100%;
+        display: block;
+        float: left;
+        margin: 0 0px;
+        text-align:center;
+    }
+    .nav-item {
+        display:list-item;
+        font-size: 13pt;
+        padding: 0 5px;
+    }
+    
+    .nav-item.portfolio {
+        font-size: 15pt;
+        border:none;
+    }
+/*End MediaQ*/   
+}
+
+@media all and (max-width: 439px) {
+    .featured-item {
+        width: 100%;
+        display: block;
+        float: left;
+        margin: 0 0px;
+        text-align:center;
+    }
+/*End MediaQ*/		
+}
+
+@media all and (orientation: portrait) {
+		
+		
+/*End MediaQ*/	
+}
+
+@media all and (orientation: landscape) {
+		
+		
+/*End MediaQ*/	
+}
+
+@media 
+(-webkit-min-device-pixel-ratio: 2), 
+(min-resolution: 192dpi) { 
+		
+		
+/*End MediaQ*/
 }
