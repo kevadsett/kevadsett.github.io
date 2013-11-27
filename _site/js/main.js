@@ -7,7 +7,5 @@ $(document).on('ready', function() {
 
 function getCurrentAge() {
     var birthday = new Date("1986-10-26T22:28:00");
-    
-    var age = Math.floor((Date.now() - birthday) / millisecondsPerYear);
-    return age;
+    return Math.floor((Date.now() - birthday) / millisecondsPerYear);
 }
