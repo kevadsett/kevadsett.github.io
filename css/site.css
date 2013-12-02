@@ -1,8 +1,13 @@
 body {
     margin:0;
     font-family: 'Cabin', sans-serif;
-    background-color: #e2e1dd;
+    background-color: #474745;
     color: #8F8B7C;
+    height: 100%;
+}
+
+.body {
+	background-color: #e2e1dd;
 }
 
 p {
@@ -63,12 +68,12 @@ img {
 }
 
 .container {
-	padding: 0 4%;
+	padding: 2em;
 }
 
 .featured-projects {
     max-width: 900px;
-    margin: 25px auto;
+    margin: 30px auto;
 }
 
 .featured-row {
@@ -97,16 +102,16 @@ a:hover .featured-image {
     width: 47%;
 	
     float: left;
-    padding: 3% 10%;
-    font-size: 13pt;  font-weight: 700;
+    /* padding: 3% 10%; */
+    font-size: 23pt;  font-weight: 700;
     /* color: #474745; */
 }
 
 .what-i-do {
-    float: left;
+    float: right;
 	
     width: 26%;
-    padding: 2%;
+    /* margin-top: 3em; */
 }
 
 .showcase-thumbnail {
@@ -136,6 +141,12 @@ a:hover .featured-image {
 }
 .blog-post .thought-text {
 	font-style:oblique;
+}
+
+.mission-container {
+	background-color: #474745;
+	background-repeat: repeat-x;
+	padding: 2em;
 }
 
 /* Media queries!
@@ -211,6 +222,10 @@ a:hover .featured-image {
         font-size: 15pt;
         border:none;
     }
+	.mission-statement, .what-i-do {
+		width:100%;
+		padding: 0.5em 0;
+	}
 /*End MediaQ*/   
 }
 

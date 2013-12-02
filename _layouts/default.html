@@ -1,10 +1,11 @@
 {% include header.html%}
-<div class="divider"></div>
-{% include navbar.html%}
-<div class="divider"></div>
-<div class="container">
-    {{ content }}
+<div class="body">
+    <div class="divider"></div>
+    {% include navbar.html%}
+    <div class="divider"></div>
+    <div class="container">
+        {{ content }}
+    </div>
 </div>
-<div class="divider"></div>
-<!--{% include mission.html %}
-{% include footer.html%}-->
+{% include mission.html %}
+{% include footer.html%}
