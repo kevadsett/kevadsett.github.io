@@ -126,6 +126,18 @@ a:hover .featured-image {
 	text-align: center;
 }
 
+.blog-post .inner {
+	max-width: 900px;
+	margin: auto;
+	padding:0 10%
+}
+.blog-post h1, .blog-post .thought-text {
+	color: #44423C;
+}
+.blog-post .thought-text {
+	font-style:oblique;
+}
+
 /* Media queries!
 -------------------------------------------------------------------------------*/
 
@@ -154,11 +166,14 @@ a:hover .featured-image {
         width: 112px;
 }
     
-    .nav-item.portfolio {
+    .nav-item {
         font-size: 14pt;
-        border-left: solid 1px;
         border-right: solid 1px;
     }
+	
+	.nav-item:last-child {
+		border-right: none;
+	}
 	
 	.showcase-display {
 		width: 25%;
