@@ -1,7 +1,8 @@
 {% include header.html%}
-<div class="divider"></div>
-{% include navbar.html%}
-<div class="divider"></div>
+<div class="body clearfix">
+    <div class="divider"></div>
+    {% include navbar.html%}
+    <div class="divider"></div>
     <div class="showcase-header">
         <h1>{{ page.title }}</h1>
         <p class="muted">{{page.date | date_to_long_string}}</p>
@@ -17,9 +18,9 @@
                 <div class="btn disabled">{{page.viewProjectText}}</div>
             {% endif %}
         </div>
-        <div class="showcaseButton"><a href="{{page.srcLink}}" target="_blank"><div class="btn">See the code</div></a></div>
+        <div class="showcase-button"><a href="{{page.srcLink}}" target="_blank"><div class="btn">See the code</div></a></div>
     </div>
     <div class="showcase-description">{{content}}</div>
-  </div>
 </div>
+
 {% include footer.html%}

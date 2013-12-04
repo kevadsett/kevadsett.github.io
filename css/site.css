@@ -22,13 +22,17 @@ a {
     text-decoration:none;
 }
 
+i.fa {
+	padding: 0.3em;
+}
+
 img {
 	max-width:100%;
 	max-height: 225px;
 }
 
 .btn {
-	max-width: 150px;
+	max-width: 225px;
 	padding: 1em;
 	background-color: #CCC8B7;
 	margin: 1em auto;    
@@ -96,6 +100,8 @@ a:hover .featured-image {
 .divider {
     background-image: url("../img/theme/divider-desktop.png");
     margin: auto;
+    height: 1px;
+    background-repeat: no-repeat;
 }
 
 .mission-statement {
@@ -149,6 +155,11 @@ a:hover .featured-image {
 	padding: 2em;
 }
 
+.showcase-button {
+	max-width:225px;
+	margin:auto;
+}
+
 /* Media queries!
 -------------------------------------------------------------------------------*/
 
@@ -172,16 +183,11 @@ a:hover .featured-image {
 
     .nav-item {
         display:inline-block;
-        font-size: 13pt;
-    
-        width: 112px;
-}
-    
-    .nav-item {
         font-size: 14pt;
         border-right: solid 1px;
-    }
-	
+        width: 112px;
+	}
+    
 	.nav-item:last-child {
 		border-right: none;
 	}
@@ -196,6 +202,9 @@ a:hover .featured-image {
 		width: 60%;
 		padding: 0 5% 0 0;
 		float: left;
+	}
+	.menu-bar {
+		display:none;
 	}
 /*End MediaQ*/		
 }
@@ -212,20 +221,28 @@ a:hover .featured-image {
     
         max-width: 225px;
 }
+	.nav-bar {
+		background-color: #474745;
+	
+}
+	.nav-bar ul {
+		margin: 0;
+		display: none;
+	}
+	.nav-bar a {
+		color:#e2e1dd;
+	}
     .nav-item {
         display:list-item;
-        font-size: 13pt;
-        padding: 0 5px;
+        font-size: 14pt;
+        padding: 0.7em 1em;
     }
     
-    .nav-item.portfolio {
-        font-size: 15pt;
-        border:none;
-    }
 	.mission-statement, .what-i-do {
 		width:100%;
 		padding: 0.5em 0;
 	}
+	
 /*End MediaQ*/   
 }
 
