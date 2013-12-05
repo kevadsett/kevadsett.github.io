@@ -169,6 +169,10 @@ a:hover .featured-image {
 	background-repeat: no-repeat;
 }
 
+.copyright {
+	text-align: center;
+	padding: 0.5em;
+}
 /* Media queries!
 -------------------------------------------------------------------------------*/
 

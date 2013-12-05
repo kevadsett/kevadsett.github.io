@@ -1,8 +1,8 @@
 var millisecondsPerYear = 31449600000; // ignoring leap years
 
 $(document).on('ready', function() {
-    var age = getCurrentAge();
-    $('.what-i-do .age').html(age);
+    $('.what-i-do .age').html(getCurrentAge());
+    $('.copyright .year').html(getCopyrightYear());
     
     $('.menu-bar a').on('click', function(event) {
         event.preventDefault();
@@ -13,6 +13,15 @@ $(document).on('ready', function() {
 function getCurrentAge() {
     var birthday = new Date("1986-10-26T22:28:00");
     return Math.floor((Date.now() - birthday) / millisecondsPerYear);
+}
+
+function getCopyrightYear() {
+    var now = new Date();
+    copyrightYearString = "2013";
+    if (now.getFullYear().toString() !== "2013") {
+        copyrightYearString += " – " + now.getFullYear();
+    }
+    return copyrightYearString;
 }
 
 function toggleMenu() {
