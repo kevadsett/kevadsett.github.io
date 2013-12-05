@@ -160,6 +160,15 @@ a:hover .featured-image {
 	margin:auto;
 }
 
+.under-construction {
+	max-width: 0px;
+	margin: auto;
+	max-height: 256px;
+	padding: 126px;
+	background-image: url('/img/theme/under-construction.png');
+	background-repeat: no-repeat;
+}
+
 /* Media queries!
 -------------------------------------------------------------------------------*/
 
