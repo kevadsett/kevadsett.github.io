@@ -1,0 +1,12 @@
+---
+layout: default
+activeNavLink: blog
+---
+
+{% for post in site.posts %}
+    {% if post.blog %}
+    <div class="blog-post">
+        <div class="inner">{{ post.content }}</div>
+    </div>
+    {% endif %}
+{% endfor %}

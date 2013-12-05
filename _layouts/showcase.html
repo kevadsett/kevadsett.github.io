@@ -1,23 +1,26 @@
 {% include header.html%}
-<div class="row-fluid">
-  <div class="span4">
-    {% include sidebar.html%}
-  </div>
-  <div class="span8">
-    <h1>{{ page.title }}</h1>
-    <p class="muted">{{page.date | date_to_long_string}}</p>
-    <div id="links" class="span3">
-        <div class="span12 projectThumbnail"><img src= "/img/thumbnails/{% if page.thumbnail %}{{ page.thumbnail }}{% else %}placekitten.jpg{% endif %}" /></a></div>
-        <div class="span12 showcaseButton">
+<div class="body clearfix">
+    <div class="divider"></div>
+    {% include navbar.html%}
+    <div class="divider"></div>
+    <div class="showcase-header">
+        <h1>{{ page.title }}</h1>
+        <p class="muted">{{page.date | date_to_long_string}}</p>
+    </div>
+    <div class="showcase-display" >
+        <div class="showcase-thumbnail">
+            <a href="{{ page.link }}"><div class="project-thumbnail" style="background-image:url('/img/thumbnails/{% if page.thumbnail %}{{ page.thumbnail}}{% else %}placekitten.jpg{% endif %}')"></div></a>
+        </div>
+        <div class="showcase-button">
             {% if page.link != 'no-link' %}
                 <a href="{{page.link}}" target="_blank"><div class="btn">{{page.viewProjectText}}</div></a>
             {% else %}
                 <div class="btn disabled">{{page.viewProjectText}}</div>
             {% endif %}
         </div>
-        <div class="span12 showcaseButton"><a href="{{page.srcLink}}" target="_blank"><div class="btn">See the code</div></a></div>
+        <div class="showcase-button"><a href="{{page.srcLink}}" target="_blank"><div class="btn">See the code</div></a></div>
     </div>
-    <div id="description" class="span7">{{content}}</div>
-  </div>
+    <div class="showcase-description">{{content}}</div>
 </div>
+
 {% include footer.html%}

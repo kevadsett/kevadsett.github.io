@@ -1,10 +1,11 @@
 {% include header.html%}
-<div class="row-fluid">
-  <div class="span4">
-    {% include sidebar.html%}
-  </div>
-  <div class="span8">
-    {{ content }}
-  </div>
+<div class="body clearfix">
+    <div class="divider"></div>
+    {% include navbar.html%}
+    <div class="divider"></div>
+    <div class="container">
+        {{ content }}
+    </div>
 </div>
+{% include mission.html %}
 {% include footer.html%}

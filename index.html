@@ -2,52 +2,21 @@
 layout: default
 ---
 
-
-{% for post in paginator.posts limit: 10 %}
-    {% cycle 'add rows': '<div class="row-fluid">', nil, nil %}
-        <div class="span4">
-            <div class="previewThumbnail">
-                <a href="{{ post.url }}"><img src= "/img/thumbnails/{% if post.thumbnail %}{{ post.thumbnail}}{% else %}placekitten.jpg{% endif %}" width="180" height="180"/></a>
-                <h3>{{post.title}}</h3>
+<div class="featured-projects">
+    <h2>Featured projects</h2>
+{% for post in site.posts %}
+    {% if post.featured %}
+        {% cycle 'add rows': '<div class="featured-row clearfix">', nil, nil %}
+            <div class="featured-item">
+                <a href="{{ post.url }}"><div class="featured-image" style="background-image:url('/img/thumbnails/{% if post.thumbnail %}{{ post.thumbnail}}{% else %}placekitten.jpg{% endif %}')"></div></a>
+                <h3><a href="{{ post.url }}">{{post.title}}</a></h3>
+                <p>{{post.blurb}}</p>
             </div>
-        </div>
-    {% cycle 'close rows': nil, nil, "</div>" %}
-    {% assign result = forloop.index | divided_by: forloop.length %}
+        {% cycle 'close rows': nil, nil, "</div>" %}
+        {% assign result = forloop.index | divided_by: forloop.length %}
+    {% endif %}
 {% endfor %}
 {% if result == 1 %}
     </div>
 {% endif %}
-<div class="row-fluid">
-    <div class="span12">
-        <div class="pagination">
-            <ul>
-                {% if paginator.previous_page %}
-                    {% if paginator.previous_page == 1 %}
-                        <li><a href="/">Prev</a></li>
-                    {% else %}
-                        <li><a href="/page{{ paginator.previous_page }}">Prev</a></li>
-                    {% endif %}
-                {% else %}
-                    <li><span class="disabled">Prev</span></li>
-                {% endif %}
-                {% if paginator.page == 1 %}
-                    <li><span class="active">1</span></li>
-                {% else %}
-                    <li><a href="/">1</a></li>
-                {% endif %}
-                {% for count in (2..paginator.total_pages) %}
-                    {% if count == paginator.page %}
-                        <li><span class="active">{{ count }}</span></li>
-                    {% else %}
-                        <li><a href="/page{{ count }}">{{count}}</a></li>
-                    {% endif %}
-                {% endfor %}
-                {% if paginator.next_page %}
-                    <li><a href="/page{{ paginator.next_page }}">Next</a></li>
-                {% else %}
-                    <li><span class="disabled">Next</span></li>
-                {% endif %}
-            </ul>
-        </div>
-    </div>
 </div>

@@ -1,84 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <title>Kev Adsett</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="A programming portfolio">
-
-    <link href="/css/bootstrap.css" rel="stylesheet">
-    
-    <link href="/css/pygments/monokai.css" rel="stylesheet">
-    <style>
-      body {
-        padding-top: 60px;
-      }
-    </style>
-    <link href="/css/bootstrap-responsive.css" rel="stylesheet">
-    
-    <link href="/css/showcase.css" rel="stylesheet">
-    <link href="/css/home.css" rel="stylesheet">
-
-    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
-    <!--[if lt IE 9]>
-      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
-  </head>
-
-  <body>
-
-  <div class="navbar navbar-inverse navbar-fixed-top">
-    <div class="navbar-inner">
-      <div class="container">
-        <a class="btn btn-navbar" data-toggle="collapse" data-target=".na\
-v-collapse">
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-        </a>
-        <a class="brand" href="#">Kev Adsett</a>
-        <div class="nav-collapse collapse">
-          <ul class="nav">
-            <li class="active"><a href="/">Home</a></li>
-          </ul>
+    <head>
+        <meta charset="utf-8">
+        <title>Kev Adsett</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="A programming portfolio">
+        
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+        <script src="/js/main.js" type="text/javascript"></script>
+        <link href='http://fonts.googleapis.com/css?family=Cabin:400,700' rel='stylesheet' type='text/css'>
+        <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+        <link href="/css/pygments/monokai.css" rel="stylesheet">
+        <link href="/css/site.css" rel="stylesheet">
+        
+        <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+        <!--[if lt IE 9]>
+          <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+        <![endif]-->
+    </head>
+        
+    <body>
+        <div class="header">
+            <div class="dots">•••</div>
+            <a class="homeLink" href="/">Kev Adsett</a>
+            <div class="site-description">A programming portfolio</div>
+            <div class="dots">•••</div>
         </div>
-      </div>
+<div class="body clearfix">
+    <div class="divider"></div>
+    <div class="nav-bar">
+    <div class="menu-bar hidden"><a href="#"><i class="fa fa-bars fa-2x"></i></a></div>
+    <ul>
+        <li class="nav-item bio">
+            <a href="/bio">Bio</a>
+        </li>
+        <li class="nav-item portfolio ">
+            <a href="/portfolio">Portfolio</a>
+        </li>
+        <li class="nav-item contact ">
+            <a href="/contact">Contact</a>
+        </li>
+        <li class="nav-item blog ">
+            <a href="/blog">Blog</a>
+        </li>
+    </ul>
+</div>
+    <div class="divider"></div>
+    <div class="showcase-header">
+        <h1>Ping</h1>
+        <p class="muted">24 October 2013</p>
     </div>
-  </div>
-  
-  <div class="container">
-<div class="row-fluid">
-  <div class="span4">
-    <h3>About Me</h3>
-
-<p>I do programming, and like to make games.</p>
-
-
-<ul>
-    
-        <li><a href="/2013/10/24/ping/">Ping</a></li>
-    
-        <li><a href="/2013/10/24/genejam/">GeneJam</a></li>
-    
-        <li><a href="/2013/09/13/laterunner/">Laterunner</a></li>
-    
-        <li><a href="/2013/02/12/reductor/">Reductor!</a></li>
-    
-</ul>
-  </div>
-  <div class="span8">
-    <h1>Ping</h1>
-    <p class="muted">24 October 2013</p>
-    <div id="links" class="span3">
-        <div class="span12 projectThumbnail"><img src= "/img/thumbnails/ping.jpg" /></a></div>
-        <div class="span12 showcaseButton">
+    <div class="showcase-display" >
+        <div class="showcase-thumbnail">
+            <a href="no-link"><div class="project-thumbnail" style="background-image:url('/img/thumbnails/ping.jpg')"></div></a>
+        </div>
+        <div class="showcase-button">
             
                 <div class="btn disabled">Unavailable online</div>
             
         </div>
-        <div class="span12 showcaseButton"><a href="https://github.com/kevadsett/Ping" target="_blank"><div class="btn">See the code</div></a></div>
+        <div class="showcase-button"><a href="https://github.com/kevadsett/Ping" target="_blank"><div class="btn">See the code</div></a></div>
     </div>
-    <div id="description" class="span7"><p>My first go at developing for PlayStation Mobile! This project uses the C# language and is my version of <a href="http://www.gamefromscratch.com/post/2012/09/07/A-complete-PlayStation-Vita-game-from-scratch-Part-One.aspx" target="_blank">GameFromScratch.com's PSM development tutorial</a>.</p>
+    <div class="showcase-description"><p>My first go at developing for PlayStation Mobile! This project uses the C# language and is my version of <a href="http://www.gamefromscratch.com/post/2012/09/07/A-complete-PlayStation-Vita-game-from-scratch-Part-One.aspx" target="_blank">GameFromScratch.com's PSM development tutorial</a>.</p>
 
 <p>I would really recommend those tutorials for anyone interested in getting started with PSM. They're quite code-focussed, so if you're new to programming itself then they're probably not for you.</p>
 
@@ -93,9 +76,7 @@ v-collapse">
 
 <p>The whole point of this project was both to familiarise myself with the PSM dev language and environment and to do something with physics. To that end I think I acheived my goal. My next step is potentially to publish it to the PSN mobile store (giving the 'game' away for free of course) to gain some experience of the whole of the PSM development process.</p>
 </div>
-  </div>
 </div>
-    </div>
-    
-  </body>
+
+    </body>
 </html>

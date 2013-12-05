@@ -4,7 +4,9 @@ layout: showcase
 link: /js13kgame_2013
 viewProjectText: Play the game
 srcLink: https://github.com/kevadsett/js13kgame_2013
-thumbnail: laterunner.jpg
+thumbnail: laterunner.png
+featured: true
+blurb: A responsive canvas game made for a competition. The zipped output had to be fewer than 13kbs!
 ---
 
 This was a little game I made over the course of a week for the <a href="http://www.js13kgames.com" target="_blank">js13kgames month-long game jam</a>.
