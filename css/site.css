@@ -72,10 +72,10 @@ img {
 }
 
 .container {
-	padding: 2em;
+	padding: 0 2em 2em;
 }
 
-.featured-projects {
+.featured-projects, .portfolio-projects {
     max-width: 900px;
     margin: 30px auto;
 }
@@ -84,7 +84,7 @@ img {
     width:100%;
 }
 
-.featured-image, .project-thumbnail {
+.featured-image, .project-thumbnail, .bio-image {
 	-webkit-box-shadow: 0px 9px 16px -16px rgba(0, 0, 0, 1);
 	box-shadow: 0px 9px 16px -16px rgba(0, 0, 0, 1);
 	background-repeat: no-repeat;
@@ -120,16 +120,16 @@ a:hover .featured-image {
     /* margin-top: 3em; */
 }
 
-.showcase-thumbnail {
+.showcase-thumbnail, .bio-image-container {
 	max-width:225px;
 	margin: auto;
 }
 
-.showcase-description {
+.showcase-description, .bio-text {
 	padding: 5% 10%;
 }
 
-.showcase-header {
+.showcase-header, .bio-header {
     text-align: center;
 }
 
@@ -173,6 +173,38 @@ a:hover .featured-image {
 	text-align: center;
 	padding: 0.5em;
 }
+
+.bio-image {
+	background-image: url('/img/thumbnails/kev.jpg');
+}
+
+.social-icons {
+	margin: 2em auto 0;
+	max-width: 180px;
+}
+
+.social-icon {
+	width:32px;
+	height:32px;
+	float:left;
+	margin:2px;
+}
+
+.social-icon.facebook {
+	background:url(/img/theme/social/facebook.png);
+}
+.social-icon.twitter {
+	background:url(/img/theme/social/twitter.png);
+}
+.social-icon.github {
+	background:url(/img/theme/social/github.png);
+}
+.social-icon.linkedin {
+	background:url(/img/theme/social/linkedin.png);
+}
+.social-icon.soundcloud {
+	background:url(/img/theme/social/soundcloud.png);
+}
 /* Media queries!
 -------------------------------------------------------------------------------*/
 
@@ -205,13 +237,13 @@ a:hover .featured-image {
 		border-right: none;
 	}
 	
-	.showcase-display {
+	.showcase-display, .bio-display {
 		width: 25%;
 		padding: 0 5%;
 		float: left;
     }
 	
-	.showcase-description {
+	.showcase-description, .bio-text {
 		width: 60%;
 		padding: 0 5% 0 0;
 		float: left;
@@ -226,10 +258,10 @@ a:hover .featured-image {
 	.featured-projects h2 {
 		text-align:center;
 	}
-    .featured-item, .project-thumbnail {
+    .featured-item, .project-thumbnail, .bio-image {
         width: 100%;
         display: block;
-        margin: 0 auto;
+        margin: 0 auto 10%;
         text-align:center;
     
         max-width: 225px;

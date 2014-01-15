@@ -1,5 +1,23 @@
 ---
-layout: construction
+layout: default
 activeNavLink: portfolio
 ---
-<h2>Portfolio</h2>
+<div class="portfolio-projects">
+    <h2>Portfolio</h2>
+    {% for post in site.posts %}
+        {% if post.blog != true %}
+            {% cycle 'add rows': '<div class="featured-row clearfix">', nil, nil %}
+                <div class="featured-item">
+                    <a href="{{ post.url }}"><div class="featured-image" style="background-image:url('/img/thumbnails/{% if post.thumbnail %}{{ post.thumbnail}}{% else %}placekitten.jpg{% endif %}')"></div></a>
+                    <h3><a href="{{ post.url }}">{{post.title}}</a></h3>
+                    <h4>{{post.date | date: "%D"}}</h4>
+                    <p>{{post.blurb}}</p>
+                </div>
+            {% cycle 'close rows': nil, nil, "</div>" %}
+            {% assign result = forloop.index | divided_by: forloop.length %}
+        {% endif %}
+    {% endfor %}
+{% if result == 1 %}
+    </div>
+{% endif %}
+</div>
