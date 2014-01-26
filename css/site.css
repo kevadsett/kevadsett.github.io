@@ -150,7 +150,7 @@ a:hover .featured-image {
 	max-width: 900px;
 	margin: auto;
 	padding: 0 7%;}
-.blog-post h1, .blog-post .thought-text {
+.blog-post h1, .thought-text {
 	color: #44423C;
 }
 .blog-post .thought-text {
@@ -230,6 +230,17 @@ ul.issues {
 
 .sidebar li.chapter {
     font-size: medium;
+}
+
+.blog-quote {
+    font-style:oblique;
+    margin: 0 1em 1em;
+}
+
+.blog-image-right {
+    float: right;
+    max-width: 280px;
+    padding-bottom: 0.5em;
 }
 /* Media queries!
 -------------------------------------------------------------------------------*/

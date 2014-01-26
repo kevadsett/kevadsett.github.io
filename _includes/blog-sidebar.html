@@ -4,7 +4,7 @@
         {% assign issueNumber = forloop.index + 1 %}
             <li class="issue"><a class="issue-link" href="#">Issue {{ issueNumber }}</a>
                 <ol class="chapters">
-                    {% for post in site.posts limit:5 %}
+                    {% for post in site.posts reversed %}
                         {% if post.blog and post.issue == issueNumber %}
                             <li class="chapter"><a class="chapter-link" href="{{post.url}}">{{post.title}}</a></li>
                         {% endif %}

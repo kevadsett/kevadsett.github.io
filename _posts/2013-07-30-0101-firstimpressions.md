@@ -1,13 +1,12 @@
 ---
 title: First Impressions
 issue: 1
+chapter: 1
 layout: blog
 blog: true
 mm: true
 ---
 
-#Issue 1 | Chapter 1
-## First Impressions
 You’ve all received a mysterious note over the past couple of weeks with only a location and a time on. The note has an official-looking government header, but other than that, there is no further information.
 
 Although suspicious, you all arrived at an unremarkable flat above a shop at the time specified, to be greeted by two people. One of them, a stern, buzz cut-sporting man, confident in a dark suit and standing at ease with his hands clasped behind his back, the other a young woman with white hair tied into a pony tail, wearing cargo trousers and some band tee-shirt with a punky looking logo. Her hands are wrapped in dark biker-style gloves. She’s sitting lazily in the alcove of the room’s window, looking out onto the street.

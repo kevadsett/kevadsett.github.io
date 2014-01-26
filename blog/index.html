@@ -3,10 +3,13 @@ layout: blog
 activeNavLink: blog
 ---
 
-{% for post in site.posts %}
+{% for post in site.posts reversed %}
     {% if post.blog %}
     <div class="blog-post">
-        <div class="inner">{{ post.content }}</div>
+        <div class="inner">
+            <h1>Issue {{ post.issue }}, chapter {{ post.chapter }}: {{ post.title }}</h1>
+            <div class="blog-content">{{ post.content }}</div>
+        </div>
     </div>
     {% endif %}
 {% endfor %}
