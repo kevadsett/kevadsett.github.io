@@ -1,19 +1,39 @@
 {% include header.html%}
+
 <div class="body clearfix">
     <div class="divider"></div>
     {% include navbar.html%}
     <div class="divider"></div>
-    <div class="blog-content">
+    <div class="blog-content clearfix">
         <div class="blog-header">
             <h1>Blog</h1>
         </div>
         <div class="blog-introduction">
-            <p>I run a (semi) regular superhero role-playing session (we play <a href="http://www.mutantsandmasterminds.com/" target="_blank">Mutants and Masterminds</a> by Green Ronin). After each session, I try to write up what's happened in a more creative way for posterity, and because it's really cool for the players to read back in more of a story-telling fashion, the decisions they've made to help the story along.</p>
+            <p>I run a (semi) regular superhero role-playing session (we play <a href="http://www.mutantsandmasterminds.com/" target="_blank">Mutants and Masterminds</a> by Green Ronin). After each session, I try to write up what's happened in a more creative way, both for posterity, and because it's really cool for the players to read back in more of a story-telling fashion, the decisions they've made to help the story along.</p>
         </div>
         {% include blog-sidebar.html%}
         <div class="container">
             {{ content }}
+            <!--<div class="blog-nav"><a class="blog-back" href="#">&lt;&lt;BACK</a> | <a class="blog-next" href="#">NEXT&gt;&gt;</a></div>-->
         </div>
     </div>
 </div>
+
+<script type="text/javascript">
+    (function() {
+        $('a.issue-link').on('click', function(event) {
+            event.preventDefault();
+            var $chapters = $(event.target).siblings();
+            toggleItem($chapters);
+        });
+        $('a.chapter-link').on('click', function(event) {
+            event.preventDefault();
+            var linkIndex = $(event.target).parent().index(),
+                $blogDiv = $('.blog-post').eq(linkIndex);
+            $('.blog-post').hide();
+            $blogDiv.show();
+        });
+    }());
+</script>
+
 {% include footer.html%}

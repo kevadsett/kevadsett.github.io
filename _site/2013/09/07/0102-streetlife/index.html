@@ -37,6 +37,7 @@
             <div class="site-description">A programming portfolio</div>
             <div class="dots">•••</div>
         </div>
+
 <div class="body clearfix">
     <div class="divider"></div>
     <div class="nav-bar">
@@ -54,12 +55,12 @@
     </ul>
 </div>
     <div class="divider"></div>
-    <div class="blog-content">
+    <div class="blog-content clearfix">
         <div class="blog-header">
             <h1>Blog</h1>
         </div>
         <div class="blog-introduction">
-            <p>I run a (semi) regular superhero role-playing session (we play <a href="http://www.mutantsandmasterminds.com/" target="_blank">Mutants and Masterminds</a> by Green Ronin). After each session, I try to write up what's happened in a more creative way for posterity, and because it's really cool for the players to read back in more of a story-telling fashion, the decisions they've made to help the story along.</p>
+            <p>I run a (semi) regular superhero role-playing session (we play <a href="http://www.mutantsandmasterminds.com/" target="_blank">Mutants and Masterminds</a> by Green Ronin). After each session, I try to write up what's happened in a more creative way, both for posterity, and because it's really cool for the players to read back in more of a story-telling fashion, the decisions they've made to help the story along.</p>
         </div>
         <div class="sidebar">
     <ul class="issues">
@@ -71,25 +72,25 @@
                         
                     
                         
-                            <li class="chapter"><a class="chapter-link" href="/2013/07/30/0101-firstimpressions/">First Impressions</a></li>
+                            <li class="chapter"><a class="chapter-link" href="#">First Impressions</a></li>
                         
                     
                         
-                            <li class="chapter"><a class="chapter-link" href="/2013/09/07/0102-streetlife/">Street Life</a></li>
+                            <li class="chapter"><a class="chapter-link" href="#">Street Life</a></li>
                         
                     
                         
                     
                         
-                            <li class="chapter"><a class="chapter-link" href="/2013/10/15/0103-ameetingofminds/">A Meeting of Minds</a></li>
+                            <li class="chapter"><a class="chapter-link" href="#">A Meeting of Minds</a></li>
                         
                     
                         
-                            <li class="chapter"><a class="chapter-link" href="/2013/10/20/0104-anightatthepark/">A Night at the Park</a></li>
+                            <li class="chapter"><a class="chapter-link" href="#">A Night at the Park</a></li>
                         
                     
                         
-                            <li class="chapter"><a class="chapter-link" href="/2013/10/20/0105-darkscience/">Dark Science</a></li>
+                            <li class="chapter"><a class="chapter-link" href="#">Dark Science</a></li>
                         
                     
                         
@@ -101,15 +102,6 @@
         
     </ul>
 </div>
-<script type="text/javascript">
-    (function() {
-        $('a.issue-link').on('click', function(event) {
-            event.preventDefault();
-            var $chapters = $(event.target).siblings();
-            toggleItem($chapters);
-        });
-    }());
-</script>
         <div class="container">
             <p>Rough Justice, having searched the now empty flat that had moments previously contained some of the now-dispatched members of the Death’s Head gang, is getting frustrated. His search has revealed nothing more than a typical gang hide-out. Various skull graffiti and imagery lay about the place; scratched into tables, and sprayed onto walls. His search exposes very little: a television, some spray paint, evidence of petty drugs use, some playing cards, but nothing that seemed to help identify the reason behind the recent surge in Death’s Head activity. His actions getting ever more erratic and violent, searching turns to vandalism as he vents his ire at finding no clues. He starts throwing tables and chairs over, breaking objects in his path. He picks up one of the cans of white spray paint from one corner of the room, and sprays a sad face with a single tear onto every skull he lays eyes on.</p>
 
@@ -197,9 +189,28 @@
 
 <p>Having finished the fight, and wanting no part in the after-party, RJ walks back over to his bike, whilst Tracer moves over to the car that had brought the Leader and his body guards to investigate.</p>
 
+            <!--<div class="blog-nav"><a class="blog-back" href="#">&lt;&lt;BACK</a> | <a class="blog-next" href="#">NEXT&gt;&gt;</a></div>-->
         </div>
     </div>
 </div>
+
+<script type="text/javascript">
+    (function() {
+        $('a.issue-link').on('click', function(event) {
+            event.preventDefault();
+            var $chapters = $(event.target).siblings();
+            toggleItem($chapters);
+        });
+        $('a.chapter-link').on('click', function(event) {
+            event.preventDefault();
+            var linkIndex = $(event.target).parent().index(),
+                $blogDiv = $('.blog-post').eq(linkIndex);
+            $('.blog-post').hide();
+            $blogDiv.show();
+        });
+    }());
+</script>
+
         <div class="copyright">© <span class="year">2013</span> Kev Adsett | <a href="mailto:hello@kev-adsett.co.uk">Say hi</a></div>
     </body>
 </html>

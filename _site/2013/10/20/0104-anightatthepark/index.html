@@ -37,6 +37,7 @@
             <div class="site-description">A programming portfolio</div>
             <div class="dots">•••</div>
         </div>
+
 <div class="body clearfix">
     <div class="divider"></div>
     <div class="nav-bar">
@@ -54,12 +55,12 @@
     </ul>
 </div>
     <div class="divider"></div>
-    <div class="blog-content">
+    <div class="blog-content clearfix">
         <div class="blog-header">
             <h1>Blog</h1>
         </div>
         <div class="blog-introduction">
-            <p>I run a (semi) regular superhero role-playing session (we play <a href="http://www.mutantsandmasterminds.com/" target="_blank">Mutants and Masterminds</a> by Green Ronin). After each session, I try to write up what's happened in a more creative way for posterity, and because it's really cool for the players to read back in more of a story-telling fashion, the decisions they've made to help the story along.</p>
+            <p>I run a (semi) regular superhero role-playing session (we play <a href="http://www.mutantsandmasterminds.com/" target="_blank">Mutants and Masterminds</a> by Green Ronin). After each session, I try to write up what's happened in a more creative way, both for posterity, and because it's really cool for the players to read back in more of a story-telling fashion, the decisions they've made to help the story along.</p>
         </div>
         <div class="sidebar">
     <ul class="issues">
@@ -71,25 +72,25 @@
                         
                     
                         
-                            <li class="chapter"><a class="chapter-link" href="/2013/07/30/0101-firstimpressions/">First Impressions</a></li>
+                            <li class="chapter"><a class="chapter-link" href="#">First Impressions</a></li>
                         
                     
                         
-                            <li class="chapter"><a class="chapter-link" href="/2013/09/07/0102-streetlife/">Street Life</a></li>
+                            <li class="chapter"><a class="chapter-link" href="#">Street Life</a></li>
                         
                     
                         
                     
                         
-                            <li class="chapter"><a class="chapter-link" href="/2013/10/15/0103-ameetingofminds/">A Meeting of Minds</a></li>
+                            <li class="chapter"><a class="chapter-link" href="#">A Meeting of Minds</a></li>
                         
                     
                         
-                            <li class="chapter"><a class="chapter-link" href="/2013/10/20/0104-anightatthepark/">A Night at the Park</a></li>
+                            <li class="chapter"><a class="chapter-link" href="#">A Night at the Park</a></li>
                         
                     
                         
-                            <li class="chapter"><a class="chapter-link" href="/2013/10/20/0105-darkscience/">Dark Science</a></li>
+                            <li class="chapter"><a class="chapter-link" href="#">Dark Science</a></li>
                         
                     
                         
@@ -101,15 +102,6 @@
         
     </ul>
 </div>
-<script type="text/javascript">
-    (function() {
-        $('a.issue-link').on('click', function(event) {
-            event.preventDefault();
-            var $chapters = $(event.target).siblings();
-            toggleItem($chapters);
-        });
-    }());
-</script>
         <div class="container">
             <p>After thanking Rusty for his help and leaving him to his drink, RJ, Cass and Fade had left the pub, informing the others of their discovery of Prodesapia activity underneath Greenwood Park. Fade had agreed to transport Max Tuesday and Tracer to the latter’s not inconsiderate base of operations. It transpires that Tracer has amassed a serious wealth over his life. Fade puts a hand on each of his team-mate’s shoulder and the three of them disappear in a curl of black and purple smoke.</p>
 
@@ -200,9 +192,28 @@
 
 <p>“If you came from over there,” says Fade gesturing toward the upper tier of the giant cavern, “and you two came up from here right?” He points at the nearby hole in ground. “Then there’s one place we haven’t been yet.”  He gestures at a tunnel leading off behind them, and the four team-mates set off into the darkness.</p>
 
+            <!--<div class="blog-nav"><a class="blog-back" href="#">&lt;&lt;BACK</a> | <a class="blog-next" href="#">NEXT&gt;&gt;</a></div>-->
         </div>
     </div>
 </div>
+
+<script type="text/javascript">
+    (function() {
+        $('a.issue-link').on('click', function(event) {
+            event.preventDefault();
+            var $chapters = $(event.target).siblings();
+            toggleItem($chapters);
+        });
+        $('a.chapter-link').on('click', function(event) {
+            event.preventDefault();
+            var linkIndex = $(event.target).parent().index(),
+                $blogDiv = $('.blog-post').eq(linkIndex);
+            $('.blog-post').hide();
+            $blogDiv.show();
+        });
+    }());
+</script>
+
         <div class="copyright">© <span class="year">2013</span> Kev Adsett | <a href="mailto:hello@kev-adsett.co.uk">Say hi</a></div>
     </body>
 </html>

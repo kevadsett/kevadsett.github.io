@@ -6,7 +6,7 @@
                 <ol class="chapters">
                     {% for post in site.posts reversed %}
                         {% if post.blog and post.issue == issueNumber %}
-                            <li class="chapter"><a class="chapter-link" href="{{post.url}}">{{post.title}}</a></li>
+                            <li class="chapter"><a class="chapter-link" href="#">{{post.title}}</a></li>
                         {% endif %}
                     {% endfor %}
                 </ol>
@@ -14,12 +14,3 @@
         {% endfor %}
     </ul>
 </div>
-<script type="text/javascript">
-    (function() {
-        $('a.issue-link').on('click', function(event) {
-            event.preventDefault();
-            var $chapters = $(event.target).siblings();
-            toggleItem($chapters);
-        });
-    }());
-</script>

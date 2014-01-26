@@ -146,6 +146,10 @@ a:hover .featured-image {
 	text-align: center;
 }
 
+.blog-post {
+    display:none;
+}
+
 .blog-post .inner {
 	max-width: 900px;
 	margin: auto;
@@ -241,6 +245,10 @@ ul.issues {
     float: right;
     max-width: 280px;
     padding-bottom: 0.5em;
+}
+
+.blog-nav {
+    text-align:center;
 }
 /* Media queries!
 -------------------------------------------------------------------------------*/
@@ -339,6 +347,10 @@ ul.issues {
 	.mission-statement, .what-i-do {
 		width:100%;
 		padding: 0.5em 0;
+	}
+	
+	.blog-content {
+		
 	}
     
     .blog-content .sidebar {
