@@ -1,14 +1,14 @@
 <div class="nav-bar">
-    <div class="menu-bar hidden"><a href="#"><i class="fa fa-bars fa-2x"></i></a></div>
+    <div class="menu-bar"><a href="#"><i class="fa fa-bars fa-2x"></i></a></div>
     <ul>
         <li class="nav-item portfolio {% if page.activeNavLink == 'portfolio' %} active{% endif %}">
             {% if page.activeNavLink != 'portfolio' %}<a href="/portfolio">Portfolio</a>{% else %}Portfolio{% endif %}
         </li>
-        <li class="nav-item blog {% if page.activeNavLink == 'blog' %} active{% endif %}">
-            {% if page.activeNavLink != 'blog' %}<a href="/blog">Blog</a>{% else %}Blog{% endif %}
-        </li>
         <li class="nav-item bio{% if page.activeNavLink == 'bio' %} active{% endif %}">
             {% if page.activeNavLink != 'bio' %}<a href="/bio">About me</a>{% else %}About me{% endif %}
+        </li>
+        <li class="nav-item blog {% if page.activeNavLink == 'blog' %} active{% endif %}">
+            {% if page.activeNavLink != 'blog' %}<a href="/blog">Blog</a>{% else %}Blog{% endif %}
         </li>
     </ul>
 </div>

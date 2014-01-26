@@ -1,0 +1,25 @@
+<div class="sidebar">
+    <ul class="issues">
+        {% for issue in site.blogIssues %}
+        {% assign issueNumber = forloop.index + 1 %}
+            <li class="issue"><a class="issue-link" href="#">Issue {{ issueNumber }}</a>
+                <ol class="chapters">
+                    {% for post in site.posts limit:5 %}
+                        {% if post.blog and post.issue == issueNumber %}
+                            <li class="chapter"><a class="chapter-link" href="{{post.url}}">{{post.title}}</a></li>
+                        {% endif %}
+                    {% endfor %}
+                </ol>
+            </li>
+        {% endfor %}
+    </ul>
+</div>
+<script type="text/javascript">
+    (function() {
+        $('a.issue-link').on('click', function(event) {
+            event.preventDefault();
+            var $chapters = $(event.target).siblings();
+            toggleItem($chapters);
+        });
+    }());
+</script>

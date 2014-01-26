@@ -29,22 +29,62 @@
 <div class="body clearfix">
     <div class="divider"></div>
     <div class="nav-bar">
-    <div class="menu-bar hidden"><a href="#"><i class="fa fa-bars fa-2x"></i></a></div>
+    <div class="menu-bar"><a href="#"><i class="fa fa-bars fa-2x"></i></a></div>
     <ul>
         <li class="nav-item portfolio ">
             <a href="/portfolio">Portfolio</a>
         </li>
-        <li class="nav-item blog  active">
-            Blog
-        </li>
         <li class="nav-item bio">
             <a href="/bio">About me</a>
+        </li>
+        <li class="nav-item blog  active">
+            Blog
         </li>
     </ul>
 </div>
     <div class="divider"></div>
-    <div class="container">
+    <div class="blog-content">
+        <div class="blog-header">
+            <h1>Blog</h1>
+        </div>
+        <div class="blog-introduction">
+            <p>I run a semi-regular superhero role-playing session (we play <a href="http://www.mutantsandmasterminds.com/" target="_blank">Mutants and Masterminds</a> by Green Ronin). After each session, I try to write up what's happened in a more creative way for posterity, and because it's really cool for the players to read back in more of a story-telling fashion, the decisions they've made to help the story along.</p>
+        </div>
+        <div class="sidebar">
+    <ul class="issues">
         
+        
+            <li class="issue"><a class="issue-link" href="#">Issue 1</a>
+                <ol class="chapters">
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                            <li class="chapter"><a class="chapter-link" href="/2013/07/09/0101-firstimpressions/">First Impressions</a></li>
+                        
+                    
+                        
+                    
+                </ol>
+            </li>
+        
+    </ul>
+</div>
+<script type="text/javascript">
+    (function() {
+        $('a.issue-link').on('click', function(event) {
+            event.preventDefault();
+            var $chapters = $(event.target).siblings();
+            toggleItem($chapters);
+        });
+    }());
+</script>
+        <div class="container">
+            
     
 
     
@@ -54,6 +94,8 @@
     
     <div class="blog-post">
         <div class="inner"><h1>Issue 1 | Chapter 1</h1>
+
+<h2>First Impressions</h2>
 
 <p>You’ve all received a mysterious note over the past couple of weeks with only a location and a time on. The note has an official-looking government header, but other than that, there is no further information.</p>
 
@@ -156,6 +198,7 @@
 
     
 
+        </div>
     </div>
 </div>
         <div class="copyright">© <span class="year">2013</span> Kev Adsett | <a href="mailto:hello@kev-adsett.co.uk">Say hi</a></div>
