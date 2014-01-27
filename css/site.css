@@ -236,6 +236,11 @@ ul.issues {
     font-size: medium;
 }
 
+.sidebar li.chapter.active a{
+    color: #8F8B7C;
+    cursor: default;
+}
+
 .blog-quote {
     font-style:oblique;
     margin: 0 1em 1em;

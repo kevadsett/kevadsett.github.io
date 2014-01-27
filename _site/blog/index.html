@@ -6,7 +6,8 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="description" content="A programming portfolio">
         
-        <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+        <script src="/js/libs/jquery-1.10.2.min.js"></script>
+        <script src="/js/libs/jquery.scrollTo-1.4.3.1-min.js"></script>
         <script src="/js/main.js" type="text/javascript"></script>
         <link href='http://fonts.googleapis.com/css?family=Cabin:400,700' rel='stylesheet' type='text/css'>
         <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
@@ -603,24 +604,74 @@
 
     
 
-            <!--<div class="blog-nav"><a class="blog-back" href="#">&lt;&lt;BACK</a> | <a class="blog-next" href="#">NEXT&gt;&gt;</a></div>-->
+            <div class="blog-nav hidden"><a class="blog-back" href="#">&lt;&lt;BACK</a> | <a class="blog-next" href="#">NEXT&gt;&gt;</a></div>
         </div>
     </div>
 </div>
 
 <script type="text/javascript">
     (function() {
+        var blogIndex = -1,
+            $backButton = $('a.blog-back'),
+            $nextButton = $('a.blog-next'),
+            $blogPosts = $('.blog-post'),
+            $visibleBlog;
+
+        function showBlog(index, scroll) {
+            $visibleBlog = $blogPosts.eq(blogIndex);
+            $blogPosts.hide();
+            $visibleBlog.show();
+            if(scroll) $.scrollTo($visibleBlog, 300);
+            $('a.chapter-link').parent().removeClass('active').eq(blogIndex).addClass('active');
+        }
+
+        function determineBlogNavVisibility() {
+            switch (blogIndex) {
+                case 0:
+                    $backButton.addClass('hidden');
+                break;
+                case $blogPosts.length - 1:
+                    $nextButton.addClass('hidden');
+                break;
+                default:
+                    if($backButton.hasClass('hidden')) {
+                        $backButton.removeClass('hidden');
+                    }
+                    if($nextButton.hasClass('hidden')) {
+                        $nextButton.removeClass('hidden');
+                    }
+                break;
+            }
+        }
+
         $('a.issue-link').on('click', function(event) {
             event.preventDefault();
             var $chapters = $(event.target).siblings();
             toggleItem($chapters);
         });
+
         $('a.chapter-link').on('click', function(event) {
             event.preventDefault();
-            var linkIndex = $(event.target).parent().index(),
-                $blogDiv = $('.blog-post').eq(linkIndex);
-            $('.blog-post').hide();
-            $blogDiv.show();
+            if(!$(event.target).parent().hasClass('active')) {
+                blogIndex = $(event.target).parent().index();
+                $('.blog-nav').removeClass('hidden');
+                determineBlogNavVisibility();
+                showBlog(blogIndex);
+            }
+        });
+
+        $backButton.on('click', function(event) {
+            event.preventDefault();
+            blogIndex--;
+            showBlog(blogIndex, true);
+            determineBlogNavVisibility();
+        });
+
+        $nextButton.on('click', function(event) {
+            event.preventDefault();
+            blogIndex++;
+            showBlog(blogIndex, true);
+            determineBlogNavVisibility();
         });
     }());
 </script>
