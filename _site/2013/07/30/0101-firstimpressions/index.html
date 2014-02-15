@@ -221,7 +221,7 @@
             $visibleBlog = $blogPosts.eq(blogIndex);
             $blogPosts.hide();
             $visibleBlog.show();
-            if(scroll) $.scrollTo($visibleBlog, 300);
+            if(scroll) $.scrollTo($visibleBlog, 300, {axis:"y"});
             $('a.chapter-link').parent().removeClass('active').eq(blogIndex).addClass('active');
         }
 
