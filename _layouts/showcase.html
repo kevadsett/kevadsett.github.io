@@ -9,9 +9,10 @@
             <p class="muted">{{page.date | date_to_long_string}}</p>
         </div>
         <div class="showcase-display" >
-            <div class="showcase-thumbnail">
-                <a href="{{ page.link }}"><div class="project-thumbnail" style="background-image:url('/img/thumbnails/{% if page.thumbnail %}{{ page.thumbnail}}{% else %}placekitten.jpg{% endif %}')"></div></a>
+            <div class="thumbnail-container">
+                <a href="{{ page.link }}"><div class="thumbnail image" style="background-image:url('/img/thumbnails/{% if page.thumbnail %}{{ page.thumbnail}}{% else %}placekitten.jpg{% endif %}')"></div></a>
             </div>
+
             <div class="showcase-button">
                 {% if page.link != 'no-link' %}
                     <a href="{{page.link}}" target="_blank"><div class="btn">{{page.viewProjectText}}</div></a>
@@ -19,7 +20,13 @@
                     <div class="btn disabled">{{page.viewProjectText}}</div>
                 {% endif %}
             </div>
-            <div class="showcase-button"><a href="{{page.srcLink}}" target="_blank"><div class="btn">See the code</div></a></div>
+            <div class="showcase-button">
+                {% if page.srcLink %}
+                    <a href="{{page.srcLink}}" target="_blank"><div class="btn">See the code</div></a>
+                {% else %}
+                    <div class="btn disabled">Source code not available</div>
+                {% endif %}
+            </div>
         </div>
         <div class="showcase-description">{{content}}</div>
     </div>

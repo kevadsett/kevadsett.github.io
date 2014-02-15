@@ -40,6 +40,15 @@ img {
 	max-height: 225px;
 }
 
+.in-progress-label {
+    background-image: url("../img/thumbnails/in-progress.png")
+;
+    padding: 0 100% 100% 0;
+    background-size: 100% auto;
+    float: left;
+    z-index: 1;
+}
+
 .btn {
 	max-width: 225px;
 	padding: 1em;
@@ -81,28 +90,31 @@ img {
 }
 
 .container {
-	/* padding: 0 2em 2em; */
+	padding: 0 2em 2em;
 }
 
-.featured-projects, .portfolio-projects {
+.featured-projects, .portfolio-projects, .in-progress-projects {
     max-width: 900px;
     margin: 30px auto;
 }
 
 .featured-row {
-    width:100%;
+    width: 92%;
+    margin: 0 4%;
 }
 
-.featured-image, .project-thumbnail, .bio-image {
+.thumbnail.image {
 	-webkit-box-shadow: 0px 9px 16px -16px rgba(0, 0, 0, 1);
 	box-shadow: 0px 9px 16px -16px rgba(0, 0, 0, 1);
-	background-repeat: no-repeat;
-	background-size: 100% auto;
-	padding: 0 0 100% 0;
-	background-position-y: 0;
 }
 
-a:hover .featured-image {
+.thumbnail {
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    padding: 0 0 100% 0;
+}
+
+a:hover .thumbnail.image {
 	background-position-y: 0px;
 }
 
@@ -129,7 +141,7 @@ a:hover .featured-image {
     /* margin-top: 3em; */
 }
 
-.showcase-thumbnail, .bio-image-container {
+.thumbnail-container, .showcase-button {
 	max-width:225px;
 	margin: auto;
 }
@@ -165,11 +177,6 @@ a:hover .featured-image {
 	background-color: #474745;
 	background-repeat: repeat-x;
 	padding: 2em;
-}
-
-.showcase-button {
-	max-width:225px;
-	margin:auto;
 }
 
 .under-construction {
@@ -259,15 +266,16 @@ ul.issues {
 -------------------------------------------------------------------------------*/
 
 @media all and (min-width:725px) {
-    .featured-item {
+    .featured.thumbnail-container, .in-progress-item {
         width: 25%;
         display: block;
         float: left;
         margin: 0 0%;
     
         max-width: 225px;
+        position: relative;
 }
-    .featured-item:nth-child(2){
+    .featured.thumbnail-container:nth-child(2){
         margin: 0 12.5%;
     }
 
@@ -322,10 +330,10 @@ ul.issues {
 }
 
 @media all and (max-width:724px) {
-	.featured-projects h2 {
+	.featured-projects h2, .in-progress-projects h2 {
 		text-align:center;
 	}
-    .featured-item, .project-thumbnail, .bio-image {
+    .thumbnail.image {
         width: 100%;
         display: block;
         margin: 0 auto 10%;

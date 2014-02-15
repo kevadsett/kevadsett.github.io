@@ -7,4 +7,6 @@ markdown: rdiscount
 permalink: pretty
 pygments: true
 
+showInProgress: true
+
 blogIssues: [1]
