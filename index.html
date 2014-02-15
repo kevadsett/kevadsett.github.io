@@ -24,7 +24,7 @@ layout: default
         <h2>Work In Progress</h2>
     {% for post in site.posts %}
         {% if post.inProgress %}
-        {% cycle 'add rows': '<div class="in-progress-row clearfix">', nil, nil %}
+        {% cycle 'add rows': '<div class="featured-row clearfix">', nil, nil %}
                 <div class="featured thumbnail-container">
                     <a href="{{ post.url }}"><div class="thumbnail image" style="background-image:url('/img/thumbnails/{% if post.thumbnail %}{{ post.thumbnail}}{% else %}placekitten.jpg{% endif %}')"></div></a>
                     <h3><a href="{{ post.url }}">{{post.title}}</a></h3>
