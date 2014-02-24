@@ -2,7 +2,7 @@
 title: First Impressions
 issue: 1
 chapter: 1
-layout: blog
+layout: blog-post
 blog: true
 mm: true
 ---

@@ -38,7 +38,6 @@
             <div class="site-description">A programming portfolio</div>
             <div class="dots">•••</div>
         </div>
-
 <div class="body clearfix">
     <div class="divider"></div>
     <div class="nav-bar">
@@ -56,63 +55,15 @@
     </ul>
 </div>
     <div class="divider"></div>
-    <div class="blog-content clearfix">
+	<div class="blog-page-content clearfix">
         <div class="blog-header">
             <h1>Blog</h1>
         </div>
-        <div class="blog-introduction">
-            <p>I run a (semi) regular superhero role-playing session (we play <a href="http://www.mutantsandmasterminds.com/" target="_blank">Mutants and Masterminds</a> by Green Ronin). After each session, I try to write up what's happened in a more creative way, both for posterity, and because it's really cool for the players to read back in more of a story-telling fashion, the decisions they've made to help the story along.</p>
-        </div>
-        <div class="sidebar">
-    <ul class="issues">
-        
-        
-            <li class="issue"><a class="issue-link" href="#">Issue 1</a>
-                <ol class="chapters">
-                    
-                        
-                    
-                        
-                            <li class="chapter"><a class="chapter-link" href="#">First Impressions</a></li>
-                        
-                    
-                        
-                            <li class="chapter"><a class="chapter-link" href="#">Street Life</a></li>
-                        
-                    
-                        
-                    
-                        
-                            <li class="chapter"><a class="chapter-link" href="#">A Meeting of Minds</a></li>
-                        
-                    
-                        
-                            <li class="chapter"><a class="chapter-link" href="#">A Night at the Park</a></li>
-                        
-                    
-                        
-                    
-                        
-                    
-                        
-                            <li class="chapter"><a class="chapter-link" href="#">Dark Science</a></li>
-                        
-                    
-                        
-                            <li class="chapter"><a class="chapter-link" href="#">Giving Chase</a></li>
-                        
-                    
-                        
-                    
-                        
-                    
-                </ol>
-            </li>
-        
-    </ul>
-</div>
         <div class="container">
-            <p>After thanking Rusty for his help and leaving him to his drink, RJ, Cass and Fade had left the pub, informing the others of their discovery of Prodesapia activity underneath Greenwood Park. Fade had agreed to transport Max Tuesday and Tracer to the latter's not inconsiderate base of operations. It transpires that Tracer has amassed a serious wealth over his life. Fade puts a hand on each of his team-mate's shoulder and the three of them disappear in a curl of black and purple smoke.</p>
+	        <div class="blog-post" style="display:block">
+		        <div class="inner">
+		            <h1>Issue 1, chapter 4: A Night at the Park</h1>
+		            <div class="post-content"><p>After thanking Rusty for his help and leaving him to his drink, RJ, Cass and Fade had left the pub, informing the others of their discovery of Prodesapia activity underneath Greenwood Park. Fade had agreed to transport Max Tuesday and Tracer to the latter's not inconsiderate base of operations. It transpires that Tracer has amassed a serious wealth over his life. Fade puts a hand on each of his team-mate's shoulder and the three of them disappear in a curl of black and purple smoke.</p>
 
 <p>Cass stoically refuses a ride from RJ, and so all three men make their way to Greenwood National Park, a 3 square mile nature reserve in the centre of the city, one walks, one rides his motorbike and one runs along behind.</p>
 
@@ -200,79 +151,12 @@
 <p>"I guess we'll just have to find out for ourselves, Sledge?" Rough Justice looks at Sledgehammer, who interprets the question correctly, and flicks the man's head against the floor, knocking him out easily."</p>
 
 <p>"If you came from over there," says Fade gesturing toward the upper tier of the giant cavern, "and you two came up from here right?" He points at the nearby hole in ground. "Then there's one place we haven't been yet."  He gestures at a tunnel leading off behind them, and the four team-mates set off into the darkness.</p>
-
-            <div class="blog-nav hidden"><a class="blog-back" href="#">&lt;&lt;BACK</a> | <a class="blog-next" href="#">NEXT&gt;&gt;</a></div>
-        </div>
+</div>
+		    	</div>
+		    </div>
+    	</div>
     </div>
 </div>
-
-<script type="text/javascript">
-    (function() {
-        var blogIndex = -1,
-            $backButton = $('a.blog-back'),
-            $nextButton = $('a.blog-next'),
-            $blogPosts = $('.blog-post'),
-            $visibleBlog;
-
-        function showBlog(index, scroll) {
-            $visibleBlog = $blogPosts.eq(blogIndex);
-            $blogPosts.hide();
-            $visibleBlog.show();
-            if(scroll) $.scrollTo($visibleBlog, 300, {axis:"y"});
-            $('a.chapter-link').parent().removeClass('active').eq(blogIndex).addClass('active');
-        }
-
-        function determineBlogNavVisibility() {
-            switch (blogIndex) {
-                case 0:
-                    $backButton.addClass('hidden');
-                break;
-                case $blogPosts.length - 1:
-                    $nextButton.addClass('hidden');
-                break;
-                default:
-                    if($backButton.hasClass('hidden')) {
-                        $backButton.removeClass('hidden');
-                    }
-                    if($nextButton.hasClass('hidden')) {
-                        $nextButton.removeClass('hidden');
-                    }
-                break;
-            }
-        }
-
-        $('a.issue-link').on('click', function(event) {
-            event.preventDefault();
-            var $chapters = $(event.target).siblings();
-            toggleItem($chapters);
-        });
-
-        $('a.chapter-link').on('click', function(event) {
-            event.preventDefault();
-            if(!$(event.target).parent().hasClass('active')) {
-                blogIndex = $(event.target).parent().index();
-                $('.blog-nav').removeClass('hidden');
-                determineBlogNavVisibility();
-                showBlog(blogIndex);
-            }
-        });
-
-        $backButton.on('click', function(event) {
-            event.preventDefault();
-            blogIndex--;
-            showBlog(blogIndex, true);
-            determineBlogNavVisibility();
-        });
-
-        $nextButton.on('click', function(event) {
-            event.preventDefault();
-            blogIndex++;
-            showBlog(blogIndex, true);
-            determineBlogNavVisibility();
-        });
-    }());
-</script>
-
         <div class="copyright">© <span class="year">2013</span> Kev Adsett | <a href="mailto:hello@kev-adsett.co.uk">Say hi</a></div>
     </body>
 </html>

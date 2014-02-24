@@ -38,7 +38,6 @@
             <div class="site-description">A programming portfolio</div>
             <div class="dots">•••</div>
         </div>
-
 <div class="body clearfix">
     <div class="divider"></div>
     <div class="nav-bar">
@@ -56,63 +55,15 @@
     </ul>
 </div>
     <div class="divider"></div>
-    <div class="blog-content clearfix">
+	<div class="blog-page-content clearfix">
         <div class="blog-header">
             <h1>Blog</h1>
         </div>
-        <div class="blog-introduction">
-            <p>I run a (semi) regular superhero role-playing session (we play <a href="http://www.mutantsandmasterminds.com/" target="_blank">Mutants and Masterminds</a> by Green Ronin). After each session, I try to write up what's happened in a more creative way, both for posterity, and because it's really cool for the players to read back in more of a story-telling fashion, the decisions they've made to help the story along.</p>
-        </div>
-        <div class="sidebar">
-    <ul class="issues">
-        
-        
-            <li class="issue"><a class="issue-link" href="#">Issue 1</a>
-                <ol class="chapters">
-                    
-                        
-                    
-                        
-                            <li class="chapter"><a class="chapter-link" href="#">First Impressions</a></li>
-                        
-                    
-                        
-                            <li class="chapter"><a class="chapter-link" href="#">Street Life</a></li>
-                        
-                    
-                        
-                    
-                        
-                            <li class="chapter"><a class="chapter-link" href="#">A Meeting of Minds</a></li>
-                        
-                    
-                        
-                            <li class="chapter"><a class="chapter-link" href="#">A Night at the Park</a></li>
-                        
-                    
-                        
-                    
-                        
-                    
-                        
-                            <li class="chapter"><a class="chapter-link" href="#">Dark Science</a></li>
-                        
-                    
-                        
-                            <li class="chapter"><a class="chapter-link" href="#">Giving Chase</a></li>
-                        
-                    
-                        
-                    
-                        
-                    
-                </ol>
-            </li>
-        
-    </ul>
-</div>
         <div class="container">
-            <p>Rough Justice, having searched the now empty flat that had moments previously contained some of the now-dispatched members of the Death's Head gang, is getting frustrated. His search has revealed nothing more than a typical gang hide-out. Various skull graffiti and imagery lay about the place; scratched into tables, and sprayed onto walls. His search exposes very little: a television, some spray paint, evidence of petty drugs use, some playing cards, but nothing that seemed to help identify the reason behind the recent surge in Death's Head activity. His actions getting ever more erratic and violent, searching turns to vandalism as he vents his ire at finding no clues. He starts throwing tables and chairs over, breaking objects in his path. He picks up one of the cans of white spray paint from one corner of the room, and sprays a sad face with a single tear onto every skull he lays eyes on.</p>
+	        <div class="blog-post" style="display:block">
+		        <div class="inner">
+		            <h1>Issue 1, chapter 2: Street Life</h1>
+		            <div class="post-content"><p>Rough Justice, having searched the now empty flat that had moments previously contained some of the now-dispatched members of the Death's Head gang, is getting frustrated. His search has revealed nothing more than a typical gang hide-out. Various skull graffiti and imagery lay about the place; scratched into tables, and sprayed onto walls. His search exposes very little: a television, some spray paint, evidence of petty drugs use, some playing cards, but nothing that seemed to help identify the reason behind the recent surge in Death's Head activity. His actions getting ever more erratic and violent, searching turns to vandalism as he vents his ire at finding no clues. He starts throwing tables and chairs over, breaking objects in his path. He picks up one of the cans of white spray paint from one corner of the room, and sprays a sad face with a single tear onto every skull he lays eyes on.</p>
 
 <p>"Stop wasting time" Cass's voice cuts through the noise of the destruction from the doorway, pausing Rough Justice in his tracks. Sulking, RJ pushes past Cass and mounts his motorbike without a word, speeding off away from the group.</p>
 
@@ -197,79 +148,12 @@
 <p>Rough Justice, who the others had seen get shot, was now back in the fight, and the bullet wound on his shoulder somehow gone, leaving a little blood on his clothes, but no other trace. Easily dispatching the last thug, Sledgehammer seems to have calmed a little from his earlier fury, seeing that his pal is OK.</p>
 
 <p>Having finished the fight, and wanting no part in the after-party, RJ walks back over to his bike, whilst Tracer moves over to the car that had brought the Leader and his body guards to investigate.</p>
-
-            <div class="blog-nav hidden"><a class="blog-back" href="#">&lt;&lt;BACK</a> | <a class="blog-next" href="#">NEXT&gt;&gt;</a></div>
-        </div>
+</div>
+		    	</div>
+		    </div>
+    	</div>
     </div>
 </div>
-
-<script type="text/javascript">
-    (function() {
-        var blogIndex = -1,
-            $backButton = $('a.blog-back'),
-            $nextButton = $('a.blog-next'),
-            $blogPosts = $('.blog-post'),
-            $visibleBlog;
-
-        function showBlog(index, scroll) {
-            $visibleBlog = $blogPosts.eq(blogIndex);
-            $blogPosts.hide();
-            $visibleBlog.show();
-            if(scroll) $.scrollTo($visibleBlog, 300, {axis:"y"});
-            $('a.chapter-link').parent().removeClass('active').eq(blogIndex).addClass('active');
-        }
-
-        function determineBlogNavVisibility() {
-            switch (blogIndex) {
-                case 0:
-                    $backButton.addClass('hidden');
-                break;
-                case $blogPosts.length - 1:
-                    $nextButton.addClass('hidden');
-                break;
-                default:
-                    if($backButton.hasClass('hidden')) {
-                        $backButton.removeClass('hidden');
-                    }
-                    if($nextButton.hasClass('hidden')) {
-                        $nextButton.removeClass('hidden');
-                    }
-                break;
-            }
-        }
-
-        $('a.issue-link').on('click', function(event) {
-            event.preventDefault();
-            var $chapters = $(event.target).siblings();
-            toggleItem($chapters);
-        });
-
-        $('a.chapter-link').on('click', function(event) {
-            event.preventDefault();
-            if(!$(event.target).parent().hasClass('active')) {
-                blogIndex = $(event.target).parent().index();
-                $('.blog-nav').removeClass('hidden');
-                determineBlogNavVisibility();
-                showBlog(blogIndex);
-            }
-        });
-
-        $backButton.on('click', function(event) {
-            event.preventDefault();
-            blogIndex--;
-            showBlog(blogIndex, true);
-            determineBlogNavVisibility();
-        });
-
-        $nextButton.on('click', function(event) {
-            event.preventDefault();
-            blogIndex++;
-            showBlog(blogIndex, true);
-            determineBlogNavVisibility();
-        });
-    }());
-</script>
-
         <div class="copyright">© <span class="year">2013</span> Kev Adsett | <a href="mailto:hello@kev-adsett.co.uk">Say hi</a></div>
     </body>
 </html>

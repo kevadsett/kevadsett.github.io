@@ -35,6 +35,9 @@ i.fa {
 	padding: 0.3em;
 }
 
+i.blog-link {
+	font-size: 0.7em;
+}
 img {
 	max-width:100%;
 	max-height: 225px;
@@ -222,7 +225,7 @@ a:hover .thumbnail.image {
 .social-icon.soundcloud {
 	background:url(/img/theme/social/soundcloud.png);
 }
-.blog-content {
+.blog-content, .blog-page-content {
     padding: 0 2em 2em;
 }
 

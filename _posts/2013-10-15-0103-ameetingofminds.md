@@ -2,7 +2,7 @@
 title: A Meeting of Minds
 issue: 1
 chapter: 3
-layout: blog
+layout: blog-post
 blog: true
 mm: true
 ---

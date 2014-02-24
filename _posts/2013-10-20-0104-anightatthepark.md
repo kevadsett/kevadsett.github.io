@@ -2,7 +2,7 @@
 title: A Night at the Park
 issue: 1
 chapter: 4
-layout: blog
+layout: blog-post
 blog: true
 mm: true
 ---
