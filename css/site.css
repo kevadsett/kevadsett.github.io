@@ -265,6 +265,13 @@ ul.issues {
 .blog-nav {
     text-align:center;
 }
+
+.blog-mm-disappearance-victim {
+	border: solid;
+	padding: 5px;
+	margin-bottom: 5px;
+	background-color: #fff;
+}
 /* Media queries!
 -------------------------------------------------------------------------------*/
 

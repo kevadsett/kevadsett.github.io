@@ -9,4 +9,4 @@ pygments: true
 
 showInProgress: true
 
-blogIssues: [1]
+blogIssues: [1, 2]

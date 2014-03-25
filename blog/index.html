@@ -5,7 +5,7 @@ activeNavLink: blog
 
 {% for post in site.posts reversed %}
     {% if post.blog %}
-    <div class="blog-post">
+    <div class="blog-post" data-issue="{{ post.issue }}" data-chapter="{{ post.chapter }}">
         <div class="inner">
             <h1>Issue {{ post.issue }}, chapter {{ post.chapter }}: {{ post.title }} <a href="{{post.url}}"><i class="blog-link fa fa-link"></i></a></h1>
             <div class="post-content">{{ post.content }}</div>
