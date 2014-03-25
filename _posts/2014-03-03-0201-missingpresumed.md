@@ -81,3 +81,15 @@ Slightly uncomfortable in the astounded gaze of those in the room, Cass says sho
 "Sir", says Daniels suddenly. "Sorry to interrupt your briefing but you asked me to keep an eye on the bank situation. There's been a development sir. It's not just us, it's everywhere. We're up to 9 Countries now Sir." Piker looks rattled.
 
 "I had hoped to contain this early, but things are moving fast. We have a situation. So far it hasn't leaked, and we aim to keep it that way, but an hour ago we had a report of what initially sounded like a bank robbery. However, no break-in attempt was made, but money has gone. What we thought was an isolated incident quickly revealed itself to be something more."
+
+"Did these break-ins occur simultaneously?" Asks Max in his metallic drone, "And which countries were targeted?"
+
+Piker lists off cities in nine different countries: the US, Scotland, Germany, Portugal, China, India, Peru, Mexico and Japan. He explains that all the break-ins occurred within the space of five minutes.
+
+"I'm offering you a choice at this juncture; we have no leads on either case, and both seem to be super-human in origin, making them a viable choice for your next assignment, should you choose to accept it."
+
+"WE DRESS UP AS LOTS OF MONEY AND PUT OURSELVES IN BANK." Thunders Sledgehammer, clearly pleased with what he thinks is a stroke of genius.
+
+"Thanks Sledgehammer, but that won't be necessary", Says Piker, diplomatically. "We can set up a meeting with the head of security at the bank here in the city, but I have to warn you - he's not keen on 'supers'.
+
+"I'll go." Says Rough Justice, and nobody disagrees. Piker nods his approval and instructs Corporal Daniels to set up the meeting. 
