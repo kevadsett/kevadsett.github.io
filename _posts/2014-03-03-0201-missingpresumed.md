@@ -28,7 +28,7 @@ Once the men are seated, Colonel Piker addresses them. "Gentlemen, welcome back.
 	<strong>Age</strong>: 64.<br/>
 	<strong>Occupation</strong>: 7th President of Kurtakistan.<br/>
 	<strong>Background</strong>: Leader of the country for nearly 3 decades. His party overthrew previous government in a coup in the 80s. A Cult of Personality pervades all aspects of Kurtakistani society.<br/>
-	<strong>Details</strong>: Giving a speech that can be surmised as being about the Americanisation of the world, and the injustice of their reign of war brought upon nations that do not comply with the American way. Disappeared mid-way through, 15 minutes into speech. Chaos ensued, TV camera filming event was knocked over, and the Deputy President hurriedly closed the address and dismissed the assembled media. Footage unavailable.
+	<strong>Details</strong>: Giving a speech that can be surmised as being about the Americanisation of the world, and the injustice of their reign of war brought upon nations that do not comply with the American way. Disappeared mid-way through, 15 minutes into speech. Chaos ensued, TV camera filming event was knocked over, and the Deputy President hurriedly closed the address and dismissed the assembled media. Media-filmed footage available.
 </div>
 
 <div class="blog-mm-disappearance-victim">
@@ -44,7 +44,7 @@ Once the men are seated, Colonel Piker addresses them. "Gentlemen, welcome back.
 	<strong>Age</strong>: 27.<br/>
 	<strong>Occupation</strong>: Pop star.<br/>
 	<strong>Background</strong>: Candice launched to fame after her provocative music video for her single Candy Love shot to over 80 million views on YouTube in 3 days. Since then she has had 3 further hit singles.<br/>
-	<strong>Details</strong>: On location at shoot for her latest song, Feel It. Director Peter Fenter thought it was initially a prank by her close friend, magician Tetsuyo "Sparks" Nakamoto. Nakamoto denies any involvement. Raw footage from shoot exists.
+	<strong>Details</strong>: On location at shoot for her latest song, Feel It. Director Peter Fenter thought it was initially a prank by her close friend, magician Tetsuyo "Sparks" Nakamoto. Nakamoto denies any involvement. Raw (unedited) footage from shoot exists.
 </div>
 
 <div class="blog-mm-disappearance-victim">
@@ -90,6 +90,27 @@ Piker lists off cities in nine different countries: the US, Scotland, Germany, P
 
 "WE DRESS UP AS LOTS OF MONEY AND PUT OURSELVES IN BANK." Thunders Sledgehammer, clearly pleased with what he thinks is a stroke of genius.
 
-"Thanks Sledgehammer, but that won't be necessary", Says Piker, diplomatically. "We can set up a meeting with the head of security at the bank here in the city, but I have to warn you - he's not keen on 'supers'.
+"Thanks Sledgehammer, but that won't be necessary", Says Piker, diplomatically. "We can set up a meeting with the head of security at the bank here in the city, but I have to warn you - he's not keen on 'supers'. - wife in wheelchair.
+
+Sledgehammer has a strange sensation and says "Just like a doctor I knew", pensively.
 
 "I'll go." Says Rough Justice, and nobody disagrees. Piker nods his approval and instructs Corporal Daniels to set up the meeting. 
+
+-------------------------------
+
+Footage of disappearances shown by Corporal Daniels
+Slow motion of vertical streak of light encompassing victims and then they disappear
+Fade enquires about space station
+Teleports into midpoint between victims (pacific ocean - 2 miles up)
+RJ Makes link between security teams - Daniels looks it up but finds no links
+Max Tuesday asks for personel records from US bank
+Cass and fade go to Peru, Cass gets his mojo back, feeding on the local fauna
+WALKING COMPUTER GET FOOTAGE - Sledgehammer
+Max Tuesday Checks employee records and grabs CCTV from banks, starting with Scotland using tech skills - employee records show only 1 new starter (Julia Moran - 17 - first job)- unlikely perp.
+Sees smoke disappearing like a candle being blown out. Sledeghammer thinks at Switchboard to tell the others, Switchboard is in the room
+In peru, Cass takes sunglasses off - empty eye socket, Fade balks at the sight, Cass feeds, is restored.
+RJ meets bank security - "the loss adjuster", plays the super-heros are rubbish card and finds out about missing employee - Recently moved to the area, miltitary employment history, Steven Jenson - 31 - cashier doesn't have friends, keeps himself to himself. RJ insults guy "How the hell did you ever get your job?" for not seeing pattern, misses out on opportunity to visit vault. 
+Back to Fade and Cass - 1:10 into audio file
+
+Sledge goes to missing guy's house (is mistrusting of Switchboard).
+Coordinate points from CCTV smoke direction to locate desert location
