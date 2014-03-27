@@ -114,9 +114,19 @@ Max Tuesday Checks employee records and grabs CCTV from banks, starting with Sco
 Sees smoke disappearing like a candle being blown out. Whole vault goes opaque then money is gone. Sledeghammer thinks at Switchboard to tell the others, Switchboard is in the room
 In peru, Cass goes for a stroll, Cass takes sunglasses off - empty eye socket, Fade balks at the sight, Cass feeds, is restored.
 RJ meets bank security - "the loss adjuster", plays the super-heros are rubbish card and finds out about missing employee - Recently moved to the area, miltitary employment history, Steven Jenson - 31 - cashier doesn't have friends, keeps himself to himself. RJ insults guy "How the hell did you ever get your job?" for not seeing pattern, misses out on opportunity to visit vault. 
-Back to Fade and Cass - National Peruvian Bank. Cass is easily able to pry into bank workers mind finds security office. 
-Sledge goes to missing guy's house (is mistrusting of Switchboard). Guy doesn't show up, nothing of note.
-Max looks at the other banks.
-Cass controls security staff to hand over CCTV footage from 
-Coordinate points from CCTV smoke direction to locate desert location
-Go to desert by helicopter, dropped off at required location, empty desert. Puzzle half solved, but 
+Back to Fade and Cass - National Peruvian Bank. Cass is easily able to pry into bank workers mind finds security office. Cass controls security staff to hand over CCTV footage from bank as USB, and the two of them bring it back to the base.
+Sledge goes to missing guy's house, is mistrusting of Switchboard, due to thinking she told him to kill mutants last time. Sits down on Jensons. Knocks on door, no answer. Guy doesn't show up, nothing of note.
+Max looks at the other banks, determines all locations and directions.
+Rough Justice cuts the map in half, and extends the lines, intersecting in the nevada desert.
+Sledge still sitting at Jenson's house.
+Fade teleports to Sledge looks around, confirms Jenson hasn't been there for a few days. 
+Sledge runs off back to base. Fade teleports back.
+RJ has argument with Piker about one-way assistance, doesn't seem to be getting anything in response. Sledge gets defensive. 
+Piker: "I would love to help you out. I'm one of the spearheading members of the campaign to get superheroes the recognition they deserve. Most of the government doesn't agree with me, I have a specific subset of people above me, I can only do so much."
+Go to desert by two helicopters - RJ and Sledge in one, everyone else in the other. Couple of hours flight time. Light, awkward conversation between passengers, only their second day actually hanging out. Cass learns that Max has no flesh, cannot be read psychically. Calls him the soulless one (from this point forward). "Show us your face" to Fade. Dropped off at required location (within 50 metres of point), empty desert. No evidence of anything there, no buildings, no humans. Choppers fly off. Cass projects his mind like sonar. Discovers Max's Soullessness first-hand. 
+RJ notices a stone/pebble that stands out, has an abstract shape carved into it with a rough cross underneath it.
+Max Tuesday again makes the link straight away - look out for stone in that shape.
+Fade notices dead tree with branches snapped and strewn across the surrounding area, notices branches in arranged in an x, looks around for rock silhouette, can't see it initially, but notices it after a moment.
+Sledge runs to rock formation.
+
+Cass is in favoured environment, moves earth and sand with his powers, creates large crater, but doesn't reveal anything initially.
