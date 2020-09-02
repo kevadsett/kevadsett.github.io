@@ -3,7 +3,6 @@ description: "A programming portfolio"
 
 url: "http://localhost:4000"
 
-markdown: rdiscount
 permalink: pretty
 highlighter: rouge
 
